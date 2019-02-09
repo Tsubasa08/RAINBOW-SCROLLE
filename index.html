@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>RAINBOW SCROLLE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Orbitron" rel="stylesheet">
+</head>
+<body>
+
+<!-- ロード画面 -->
+<article id="load">
+  <div class="load-wrapper">
+    <h1 id="lesson">Lesson9</h1>
+    <div class="RT-wrapper">
+      <p id="rainbowText"></p> <!-- JSで文字挿入-->
+      <img id="circle" src="img/rainbowcircle.png" alt="">
+    </div>
+  </div>
+</article>
+
+
+<!-- ハンバーガーメニュー -->
+<article id="humbergerMenu">
+  <nav class="navMenu">
+    <ul>
+      <li class="colors"> <a href="#red" class="red">Red</a> </li>
+      <li class="colors">  <a href="#orange" class="orange">Orange</a></li>
+      <li class="colors"> <a href="#yellow" class="yellow">Yellow</a> </li>
+      <li class="colors"> <a href="#green" class="green">Green</a> </li>
+      <li class="colors"> <a href="#blue" class="blue">Blue</a> </li>
+      <li class="colors"> <a href="#purple" class="purple">Purple</a> </li>
+      <li class="colors"> <a href="#aqua" class="aqua">Aqua</a> </li>
+      <li class="colors">
+        <a href="#rainbow" class="rainbow">
+          <span class="red2">R</span><span class="orange2">a</span><span class="yellow2">i</span><span class="green2">n</span><span class="blue2">b</span><span class="purple2">o</span><span class="aqua2">w</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="toggle"> <!--3本線アイコン -->
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</article>
+
+
+<!-- トップに戻るボタン -->
+<article id="arrow-wrapper">
+  <div id="arrow">
+    <i id="angleUp" class="fas fa-angle-up fa-2x"></i>
+  </div>
+</article>
+
+
+<!--  スクロールトップポジション表示  -->
+<article class="scrolleTop">
+  <p id="position"></p>
+</article>
+
+
+<!-- メイン画面 -->
+<main class="main-wrapper">
+  <div id="rainbow-wrapper">
+    <section class="rainbow red">
+      <h2 id="red" class="color">Red</h2>
+      <img class="redImage" src="img/red.jpg" alt="">
+    </section>
+
+    <section class="rainbow orange">
+      <h2 id="orange" class="color">Orange</h2>
+      <img class="orangeImage" src="img/orange.jpg" alt="">
+    </section>
+
+    <section class="rainbow yellow">
+      <h2 id="yellow" class="color">Yellow</h2>
+      <img class="yellowImage" src="img/yellow.jpg" alt="">
+    </section>
+
+    <section class="rainbow green">
+      <h2 id="green" class="color">Green</h2>
+      <img class="greenImage" src="img/green.jpg" alt="">
+    </section>
+
+    <section class="rainbow blue">
+      <h2 id="blue" class="color">Blue</h2>
+      <img class="blueImage" src="img/blue.jpg" alt="">
+    </section>
+
+    <section class="rainbow purple">
+      <h2 id="purple" class="color">Purple</h2>
+      <img class="purpleImage" src="img/purple.jpg" alt="">
+    </section>
+
+    <section class="rainbow aqua">
+      <h2 id="aqua" class="color">Aqua</h2>
+      <img class="aquaImage" src="img/aqua.jpg" alt="">
+    </section>
+
+    <section id="rainbowColor" class="rainbow">
+      <h2 id="rainbow" class="color first">
+        <span class="red2">R</span><span class="orange2">a</span><span class="yellow2">i</span><span class="green2">n</span><span class="blue2">b</span><span class="purple2">o</span><span class="aqua2">w</span>
+      </h2>
+      <div class="rainbow-wrapper">
+        <div class="wrapper1">
+          <img id="Rred" class="redImage" src="img/red.jpg" alt="">
+          <img id="Rorange" class="orangeImage" src="img/orange.jpg" alt="">
+          <img id="Ryellow" class="yellowImage" src="img/yellow.jpg" alt="">
+          <img id="Rgreen" class="greenImage" src="img/green.jpg" alt="">
+        </div>
+        <div class="wrapper2">
+          <img id="Rblue" class="blueImage" src="img/blue.jpg" alt="">
+          <img id="Rpurple" class="purpleImage" src="img/purple.jpg" alt="">
+          <img id="Raqua" class="aquaImage" src="img/aqua.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/load.js" type="text/javascript"></script><!-- 【JS】ロード画面 -->
+<script src="js/main.js" type="text/javascript"></script><!-- 【JS】メイン処理 -->
+
+
+</body>
+</html>
